@@ -1,9 +1,7 @@
 // filepath: /workspaces/codespaces-react/src/RandomImagePage.jsx
-import { useState } from 'react';
+import React from 'react';
 
-function RandomImagePage() {
-  const [imgUrl, setImgUrl] = useState(null);
-
+function RandomImagePage({ imgUrl, setImgUrl }) {
   const handleClick = () => {
     setImgUrl(`https://picsum.photos/400?random=${Math.random()}`);
   };
