@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import RandomImagePage from './RandomImagePage';
+import RandomCharPage from './RandomCharPage'; // <--- NEU
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <nav>
-            <Link to="/">Home</Link> | <Link to="/random-image">Zufallsbild</Link>
+            <Link to="/">Home</Link> | <Link to="/random-image">Zufallsbild</Link> | <Link to="/random-char">Zufallszeichen</Link>
           </nav>
         </header>
         <Routes>
@@ -18,6 +19,7 @@ function App() {
             </main>
           } />
           <Route path="/random-image" element={<RandomImagePage />} />
+          <Route path="/random-char" element={<RandomCharPage />} /> {/* NEU */}
         </Routes>
       </div>
     </Router>
