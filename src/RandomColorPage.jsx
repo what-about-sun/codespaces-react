@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 function getRandomColor() {
-  // Zufällige HEX-Farbe generieren
   const letters = '0123456789ABCDEF';
   let color = '#';
   for (let i = 0; i < 6; i++) {
@@ -10,21 +9,23 @@ function getRandomColor() {
   return color;
 }
 
-function RandomColorPage() {
-  const [color, setColor] = useState(getRandomColor());
-
+export default function RandomColorPage({ color, setColor }) {
   const handleClick = () => {
     setColor(getRandomColor());
   };
 
   return (
     <div className="random-color-container">
-      <h2>Zufallsfarben-Generator</h2>
-      <button onClick={handleClick}>Zeige eine zufällige Farbe</button>
-      <div className="random-color-circle" style={{ backgroundColor: color }} />
-      <div style={{ marginTop: 16, fontSize: '1.5rem' }}>{color}</div>
-    </div>
-  );
+      <h2>Zufallsfarbe Generator</h2>
+      <button onClick={handleClick}>Zufallsfarbe generieren</button>
+      {color && (
+        <div className="random-color-circle"
+          style={{ backgroundColor: color }}
+          >
+        </div>
+      )}
+      {color && <p>Aktuelle Farbe: {color}</p>}
+      {!color && <p>Noch keine Farbe generiert.</p>}
+     </div>
+  );  
 }
-
-export default RandomColorPage;
