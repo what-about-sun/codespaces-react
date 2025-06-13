@@ -19,16 +19,16 @@ function App() {
         <header className="App-header">
           <nav>
             <Link to="/">Home</Link> | 
-            <Link to="/random-image">Bild</Link> | 
-            <Link to="/random-char">Zeichen</Link> | 
+            <Link to="/random-image">Foto</Link> | 
+            <Link to="/random-char">Schriftzeichen</Link> | 
             <Link to="/random-color">Farbe</Link> | 
-            <Link to="/random-emoji">Emoji</Link>
+            <Link to="/random-emoji">Symbol/Emoji</Link>
           </nav>
         </header>
         <Routes>
           <Route path="/" element={
             <main>
-              <div className="startseite-text">Willkommen auf der Startseite!</div>
+              <div className="startseite-text">Willkommen!</div>
             </main>
           } />
           <Route path="/random-image" element={

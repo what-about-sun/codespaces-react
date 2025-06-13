@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import CustomButton from './components/CustomButton';
 
 function getRandomColor() {
   const letters = '0123456789ABCDEF';
@@ -16,8 +17,8 @@ export default function RandomColorPage({ color, setColor }) {
 
   return (
     <div className="random-color-container">
-      <h2>Zufallsfarbe Generator</h2>
-      <button onClick={handleClick}>Zufallsfarbe generieren</button>
+      <h2>Farb-Generator</h2>
+      <CustomButton onClick={handleClick}>Jetzt starten</CustomButton>
       {color && (
         <div className="random-color-circle"
           style={{ backgroundColor: color }}
@@ -25,7 +26,7 @@ export default function RandomColorPage({ color, setColor }) {
         </div>
       )}
       {color && <p>Aktuelle Farbe: {color}</p>}
-      {!color && <p>Noch keine Farbe generiert.</p>}
+      {!color && <p className="smallText">Noch keine Farbe generiert.</p>}
      </div>
   );  
 }

@@ -1,5 +1,5 @@
-// filepath: /workspaces/codespaces-react/src/RandomImagePage.jsx
 import React from 'react';
+import CustomButton from './components/CustomButton';
 
 function RandomImagePage({ imgUrl, setImgUrl }) {
   const handleClick = () => {
@@ -8,10 +8,11 @@ function RandomImagePage({ imgUrl, setImgUrl }) {
 
   return (
     <div className="random-image-container">
-      <h2>Zufallsbild Generator</h2>
-      <button onClick={handleClick}>Zeige ein zufälliges Bild</button>
-      <div style={{ marginTop: 20 }}>
-        {imgUrl && <img src={imgUrl} alt="Random" />}
+      <h2>Foto-Generator</h2>
+      <CustomButton onClick={handleClick}>Jetzt starten</CustomButton>
+      <div className="random-image-display">
+        {imgUrl && <img src={imgUrl} alt="Random" style={{ marginTop: 40 }} />}
+        {!imgUrl && <p className="smallText">Noch kein Foto generiert.</p>}
       </div>
     </div>
   );
