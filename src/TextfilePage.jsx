@@ -3,18 +3,22 @@ import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 
 function TextfilePage() {
-  const [content, setContent] = useState("");
+  const [text, setText] = useState("");
 
   useEffect(() => {
-    fetch("/textfile.md")
+    fetch("/textfile.b64")
       .then((res) => res.text())
-      .then(setContent);
+      .then((base64) => {
+        // base64 zu normalem Text dekodieren
+        const decoded = atob(base64);
+        setText(decoded);
+      });
   }, []);
 
   return (
-    <div className="text-container">
-      <h1>Text anzeigen</h1>
-      <ReactMarkdown>{content}</ReactMarkdown>
+   <div className="text-container">
+      <h1>Base64-dekodierte Datei</h1>
+      <ReactMarkdown>{text}</ReactMarkdown>
     </div>
   );
 }
