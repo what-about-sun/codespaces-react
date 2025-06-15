@@ -18,7 +18,7 @@ export default function RandomEmojiPage({ emoji, setEmoji }) {
       <h2>Symbol-, Emoji-Generator</h2>
       <CustomButton onClick={handleClick}>Jetzt starten</CustomButton>
       {emoji && (
-        <div style={{ fontSize: "18rem", margin: "1rem" }}>{emoji}</div>
+        <div style={{ fontSize: "21rem", margin: "1rem" }}>{emoji}</div>
       )}
       {!emoji && <p className="smallText">Noch kein Symbol/Emoji generiert.</p>}
     </div>

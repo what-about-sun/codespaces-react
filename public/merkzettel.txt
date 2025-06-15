@@ -1,0 +1,48 @@
+    1  npm start
+    2  git fetch
+    3  git checkout create-pulse-button 
+    4  git status
+    5  npm run
+    6  npm dev
+    7  npm run
+    8  npm test
+    9  npm run
+   10  npm build
+   11  npm
+   12  npm run
+   13  npm dev
+   14  npm run dev
+   15  npm start dev
+   16  npm run dev
+   17  npm install react-markdown
+   18  npm audit fix
+   19  git branch -m new-branch-name
+   20  git branch -m add-textpage
+   21  git status
+   22  git push origin add-textpage 
+   23  git push origin --delete create-pulse-button
+   24  git status
+   25  git branch --unset-upstream
+   26  git status
+   27  npm start
+   28  npm run dev
+   29  npm start
+   30  npm run dev
+   31  cd public/
+   32  ls -ltr
+   33  cp textfile.md textfile.md.base64
+   34  cat textfile.md.base64 | base64 
+   35  cat textfile.b64 
+   36  cat textfile.md | base64 > textfile.b64 
+   37  cat textfile.md | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+   38  history 
+   39  history merkzettel.txt
+   40  history > merkzettel.txt
+   41  cat textfile.md | tr 'A-Za-z' 'N-ZA-Mn-za-m' > textfile.enc
+   42  cat textfile.enc | base64 > textfile.b64
+   43  history > merkzettel.txt
+   44  cd public/
+   45  ls -ltr
+   46  cat textfile.md | tr 'A-Za-z' 'N-ZA-Mn-za-m' > textfile.enc
+   47  cat textfile.enc | base64 > textfile.b64
+   48  history > merkzettel.txt

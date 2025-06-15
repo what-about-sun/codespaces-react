@@ -57,10 +57,11 @@ main {
 }
 
 .random-image-display {
-  margin-top: 0px;
+  margin-top: 38px;
   font-size: 20rem;
   text-align: center;
-  min-height: 6rem;
+  min-height: 5rem;
+  width: 100%;
 }
 
 .random-char-container {
@@ -72,7 +73,7 @@ main {
 
 .random-char-display {
   margin-top: 0px;
-  font-size: 20rem;
+  font-size: 25rem;
   text-align: center;
   min-height: 6rem;
 }
@@ -86,8 +87,8 @@ main {
 
 .random-color-circle {
   margin-top: 32px;
-  width: 300px;
-  height: 300px;
+  width: 390px;
+  height: 390px;
   border-radius: 50%;
   border: 4px solid #333;
   box-shadow: 0 32px 32px rgba(0,0,0,0.1);
@@ -105,4 +106,22 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.modernInput {
+  background: linear-gradient(90deg, #4f8cff 0%, #2351a2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1.13rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.15);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.modernInput:focus {
+  border-color: #005fa3;
+  background: #fff;
 }

@@ -11,7 +11,8 @@ function RandomImagePage({ imgUrl, setImgUrl }) {
       <h2>Foto-Generator</h2>
       <CustomButton onClick={handleClick}>Jetzt starten</CustomButton>
       <div className="random-image-display">
-        {imgUrl && <img src={imgUrl} alt="Random" style={{ marginTop: 40 }} />}
+        {imgUrl && <img src={imgUrl} alt="Random" 
+        style={{ width: "30%", height: "30%", objectFit: "contain" }} />}
         {!imgUrl && <p className="smallText">Noch kein Foto generiert.</p>}
       </div>
     </div>
