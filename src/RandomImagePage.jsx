@@ -15,7 +15,12 @@ function RandomImagePage({ imgUrl, setImgUrl }) {
         style={{ width: "30%", height: "30%", objectFit: "contain" }} />}
         {!imgUrl && <p className="smallText">Noch kein Foto generiert.</p>}
       </div>
-      <h4> Images from <a href="https://picsum.photos/">Lorem Picsum</a> and <a href="https://unsplash.com/">Unsplash.</a> </h4>
+      <h4>
+        Images from{' '}
+        <a href="https://picsum.photos/" target="_blank" rel="noopener noreferrer">Lorem Picsum</a>
+        {' '}and{' '}
+        <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash.</a>
+      </h4>
     </div>
   );
 }

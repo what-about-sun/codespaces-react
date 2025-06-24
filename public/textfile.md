@@ -13,15 +13,15 @@ Ludwig Wittgenstein, Tractatus Logico-Philosophicus
 
 [Wittgensteins Leiter](https://de.wikipedia.org/wiki/Wittgensteins_Leiter)
 
-# Philosophischen Untersuchungen
+# Philosophische Untersuchungen
 ## PU 122
 
 „Es ist eine Hauptquelle unseres Unverständnisses, \
 daß wir den Gebrauch unserer Wörter nicht übersehen“
 
 Quelle:
-Ludwig Wittgenstein, Philosophischen Untersuchungen
+Ludwig Wittgenstein, Philosophische Untersuchungen
 
-[Philosophischen Untersuchungen](https://de.wikipedia.org/wiki/Philosophische_Untersuchungen)
+[Philosophische Untersuchungen](https://de.wikipedia.org/wiki/Philosophische_Untersuchungen)
 
 
