@@ -1,3 +1,5 @@
+//'use client';
+
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState } from 'react';
@@ -6,6 +8,7 @@ import RandomCharPage from './RandomCharPage';
 import RandomColorPage from './RandomColorPage';
 import RandomEmojiPage from './RandomEmojiPage';
 import TextfilePage from "./TextfilePage";
+import RandomMapPage from './RandomMapPage';
 
 function App() {
   // Zustand für Bild und Zeichen zentral speichern
@@ -24,7 +27,8 @@ function App() {
             <Link to="/random-char">Schriftzeichen</Link> | 
             <Link to="/random-color">Farbe</Link> | 
             <Link to="/random-emoji">Symbol/Emoji</Link> |
-            <Link to="/textfile">Text</Link>
+            <Link to="/textfile">Text</Link> |
+            <Link to="/random-map">Karte</Link>
           </nav>
         </header>
         <Routes>
@@ -46,6 +50,7 @@ function App() {
             <RandomEmojiPage emoji={emoji} setEmoji={setEmoji} />
           } />
           <Route path="/textfile" element={<TextfilePage />} />
+          <Route path="/random-map" element={<RandomMapPage />} />
         </Routes>
       </div>
     </Router>
